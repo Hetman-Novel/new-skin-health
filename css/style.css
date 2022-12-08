@@ -2810,6 +2810,7 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 
 .about-vision__blockTitle {
   color: #000;
+  cursor: default;
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
@@ -2820,7 +2821,6 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 }
 
 .about-vision__blockTitle::after {
-  display: none;
   content: url("../images/svg/spoller-arrow.svg");
   position: absolute;
   right: 24px;
@@ -5240,6 +5240,10 @@ a.plyr__control:before {
     margin-left: 11px;
     margin-right: 11px;
     width: calc(50% - 22px);
+  }
+
+  .about-vision__blockTitle::after {
+    display: none;
   }
 
   .about-our-products {
