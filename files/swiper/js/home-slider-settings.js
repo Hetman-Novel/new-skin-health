@@ -52,9 +52,10 @@ if (fs_slider) {
       watchSlidesVisibility: true,
    });
 }
-
-if (document.querySelectorAll('.world-better-slider__slide').length < 3) {
-   document.getElementById('world-better-wrap-arrows').remove();
+if (fs_slider.length > 1) {
+   if (document.querySelectorAll('.world-better-slider__slide').length < 3) {
+      document.getElementById('world-better-wrap-arrows').remove();
+   }
 }
 const world_better_slider = document.querySelector('.world-better__slider')
 if (world_better_slider) {

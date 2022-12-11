@@ -4,8 +4,8 @@ if (about_milestones_slider) {
 
       // Стрелки
       navigation: {
-         prevEl: '.about-milestones__sw-btn-prev',
-         nextEl: '.about-milestones__sw-btn-next',
+         prevEl: '.about-milestones__prev',
+         nextEl: '.about-milestones__next',
       },
 
       //invert: true,
@@ -31,15 +31,18 @@ if (about_milestones_slider) {
 
       breakpoints: {
          0: {
-            slidesPerView: 1,
+            slidesPerView: 1.6,
          },
          360: {
-            slidesPerView: 2,
+            slidesPerView: 1.8,
          },
          768: {
-            slidesPerView: 3,
+            slidesPerView: 2.8,
          },
          1024: {
+            slidesPerView: 3.6,
+         },
+         1200: {
             slidesPerView: 4,
          }
       },
