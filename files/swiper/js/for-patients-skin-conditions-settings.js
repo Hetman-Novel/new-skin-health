@@ -27,7 +27,7 @@ if (about_milestones_slider) {
       // Отступ между слайдами
       spaceBetween: 30,
 
-      //loop: true,
+      loop: true,
 
       // Скорость
       speed: 800,
@@ -70,7 +70,7 @@ if (for_patients_weekly_basis_slider) {
       // Отступ между слайдами
       spaceBetween: 30,
 
-      //loop: true,
+      loop: true,
 
       // Скорость
       speed: 800,

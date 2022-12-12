@@ -5,13 +5,14 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20221211133807">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20221211133807">
+   <link rel="stylesheet" href="css/style.min.css?_v=20221212164538">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20221212164538">
    <title>For Patients - Skin Health AI-Tracker</title>
 </head>
 
 <body>
    <div class="wrapper">
+      <div id="popup_03_overlay" class="why-its-highly-important__overlay">overlay</div>
       <header class="header">
 	<div id="header-wrapper" class="header__wrapper lock-padding">
 		<div class="n_container header-container">
@@ -212,11 +213,11 @@
                      <div class="first-screen__wrap-buttons">
                         <a href="/get-skinive.html" class="first-screen__button">GET STARTED</a>
                         <p class="first-screen__watch-video">
-                           <a class="first-screen__watch-video-circle popup-link" href="#popup_02">
+                           <button id="fp-fs-btn" class="first-screen__watch-video-circle">
                               <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
                                  <path d="M12 7L3.01142e-07 13.9282L9.06825e-07 0.0717964L12 7Z" fill="white" />
                               </svg>
-                           </a>
+                           </button>
                            WATCH VIDEO
                         </p>
                      </div>
@@ -253,7 +254,7 @@
                   </div>
                   <div data-da="fs-one-item, 2, 991" class="first-screen__item">
                      <div class="first-screen__item-content">
-                        <div class="fs-slider deley swiper-conteiner">
+                        <div id="fs-slider-two" class="fs-slider deley swiper-conteiner">
                            <div class="fs-slider__wrapper swiper-wrapper">
                               <div class="fs-slider__slide swiper-slide">
                                  <div class="fs-slider__wrap-image">
@@ -479,18 +480,18 @@
                </div>
             </div>
          </section>
-         <section class="for-patients-self-exam">
+         <section id="for-patients-self-exam" class="for-patients-self-exam">
             <div class="for-patients-self-exam__items">
                <div data-da="for-patients-self-exam-two-item, 2, 991" class="for-patients-self-exam__item">
-                  <div class="for-patients-self-exam__block-image">
+                  <a href="#popup_03" class="for-patients-self-exam__block-image popup-link">
                      <picture><source srcset="images/for-patients-self-exam-image.webp" type="image/webp"><img src="images/for-patients-self-exam-image.jpg" class="for-patients-self-exam__image" alt=""></picture>
-                     <a class="for-patients-self-exam__btn-play popup-link" href="#popup_03">
+                     <span class="for-patients-self-exam__btn-play">
                         <svg width="18" height="22" viewBox="0 0 18 22" fill="none">
                            <path d="M17.5 10.9997L-9.5161e-07 21.1033L-6.83225e-08 0.896044L17.5 10.9997Z"
                               fill="white" />
                         </svg>
-                     </a>
-                  </div>
+                     </span>
+                  </a>
                </div>
                <div class="for-patients-self-exam__item for-patients-self-exam-two-item">
                   <h2 class="for-patients-self-exam__above-title">Evaluate unusual signs with Skinive</h2>
@@ -1124,12 +1125,12 @@
    </div>
 </footer>
    </div>
-   <script src="js/script.min.js?_v=20221211133807"></script>
-   <script src="files/swiper/js/swiper-bundle.min.js?_v=20221211133807"></script>
-   <script src="files/swiper/js/home-slider-settings.js?_v=20221211133807"></script>
-   <script src="files/swiper/js/for-patients-skin-conditions-settings.js?_v=20221211133807"></script>
-   <script src="files/js/plyr.min.js?_v=20221211133807"></script>
-   <!--<script src="files/js/animation-elements.min.js?_v=20221211133807"></script>-->
+   <script src="js/script.min.js?_v=20221212164538"></script>
+   <script src="files/swiper/js/swiper-bundle.min.js?_v=20221212164538"></script>
+   <script src="files/swiper/js/home-slider-settings.js?_v=20221212164538"></script>
+   <script src="files/swiper/js/for-patients-skin-conditions-settings.js?_v=20221212164538"></script>
+   <script src="files/js/plyr.min.js?_v=20221212164538"></script>
+   <!--<script src="files/js/animation-elements.min.js?_v=20221212164538"></script>-->
 
    <div id="popup_02" class="popup">
       <!-- popup-video -->

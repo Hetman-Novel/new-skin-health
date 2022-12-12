@@ -3515,6 +3515,24 @@ main.main.get-skinive {
   line-height: 34px;
 }
 
+.why-its-highly-important__overlay {
+  background: rgba(17, 62, 106, 0.5);
+  bottom: 0;
+  font-size: 0;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  transition: all 0.3s ease 0s;
+  top: 0;
+  z-index: -1;
+}
+
+.why-its-highly-important__overlay.show {
+  opacity: 1;
+  z-index: 110;
+}
+
 .for-patients-weekly-basis {
   margin-bottom: 37px;
   margin-top: 50px;
@@ -3532,10 +3550,10 @@ main.main.get-skinive {
   position: absolute;
   right: 0;
   opacity: 0;
-  transition: 0.3s;
+  transition: all 0.3s ease 0s;
   visibility: hidden;
   top: 70px;
-  z-index: 2;
+  z-index: 120;
 }
 
 .for-patients-weekly-basis__read-more.show {
@@ -3754,6 +3772,7 @@ main.main.get-skinive {
 .for-patients-self-exam__block-image {
   background-color: #F9F9F9;
   border-radius: 50px;
+  display: block;
   overflow: hidden;
   height: 720px;
   position: relative;
@@ -3770,6 +3789,15 @@ main.main.get-skinive {
   top: 0;
   width: 100%;
   z-index: 1;
+}
+
+.for-patients-self-exam__block-image:hover .for-patients-self-exam__btn-play {
+  height: 88px;
+  width: 88px;
+}
+
+.for-patients-self-exam__block-image:hover .for-patients-self-exam__btn-play svg {
+  transform: scale(0.85);
 }
 
 .for-patients-self-exam__block-wrap-icon {
@@ -3821,15 +3849,6 @@ main.main.get-skinive {
   top: 50%;
   width: 98px;
   z-index: 2;
-}
-
-.for-patients-self-exam__btn-play:hover {
-  height: 88px;
-  width: 88px;
-}
-
-.for-patients-self-exam__btn-play:hover svg {
-  transform: scale(0.85);
 }
 
 .for-patients-skin-conditions {
@@ -4095,7 +4114,7 @@ main.main.get-skinive {
 .footer {
   background-color: #F9F9F9;
   border-radius: 50px;
-  margin-bottom: 135px;
+  margin-bottom: 20px;
   padding: 47px 20px 44px;
   position: relative;
   z-index: 1;
@@ -6167,7 +6186,6 @@ a.plyr__control:before {
 
   .footer {
     border-radius: 90px;
-    margin-bottom: 152px;
     margin-top: 150px;
     padding-bottom: 81px;
     padding-left: 99px;
@@ -7415,20 +7433,20 @@ a.plyr__control:before {
     height: calc(428px + 292 * ((100vw - 320px) / 880));
   }
 
+  .for-patients-self-exam__block-image:hover .for-patients-self-exam__btn-play {
+    height: calc(58px + 30 * ((100vw - 320px) / 880));
+  }
+
+  .for-patients-self-exam__block-image:hover .for-patients-self-exam__btn-play {
+    width: calc(58px + 30 * ((100vw - 320px) / 880));
+  }
+
   .for-patients-self-exam__btn-play {
     height: calc(58px + 40 * ((100vw - 320px) / 880));
   }
 
   .for-patients-self-exam__btn-play {
     width: calc(58px + 40 * ((100vw - 320px) / 880));
-  }
-
-  .for-patients-self-exam__btn-play:hover {
-    height: calc(58px + 30 * ((100vw - 320px) / 880));
-  }
-
-  .for-patients-self-exam__btn-play:hover {
-    width: calc(58px + 30 * ((100vw - 320px) / 880));
   }
 
   .for-patients-skin-conditions__title {
