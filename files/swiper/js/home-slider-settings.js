@@ -24,7 +24,7 @@ if (fs_slider) {
       // Отступ между слайдами
       spaceBetween: 30,
 
-      //loop: true,
+      loop: true,
 
       // Скорость
       speed: 800,

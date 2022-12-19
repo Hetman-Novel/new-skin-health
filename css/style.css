@@ -1704,7 +1704,7 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 }
 
 .start-your-jouney {
-  padding-bottom: 30px;
+  padding-bottom: 12px;
   padding-top: 50px;
 }
 
@@ -1735,8 +1735,8 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 }
 
 .take-care-of-skin {
-  padding-bottom: 60px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 12px;
 }
 
 .take-care-of-skin__text-above-title {
@@ -2245,7 +2245,7 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 }
 
 .world-better-slider__wrap-text {
-  padding-bottom: 38px;
+  padding-bottom: 17px;
   padding-top: 31px;
 }
 
@@ -2384,6 +2384,7 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 .supported-by__blocks {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: -20px;
 }
 
@@ -2609,8 +2610,12 @@ main.main.get-skinive {
   margin-top: 38px;
 }
 
+.get-skinive__buttons.mds-buttons .get-skinive__button {
+  box-shadow: 0 20px 30px rgba(74, 100, 251, 0.25);
+}
+
 .get-skinive__button {
-  box-shadow: 0px 20px 30px rgba(255, 120, 60, 0.25);
+  box-shadow: 0 20px 30px rgba(255, 120, 60, 0.25);
   border-radius: 40px;
   height: 63px;
 }
@@ -3010,7 +3015,7 @@ main.main.get-skinive {
 
 .about-milestones {
   padding-bottom: 0px;
-  padding-top: 90px;
+  padding-top: 94px;
 }
 
 .about-milestones__top-items {
@@ -3515,24 +3520,6 @@ main.main.get-skinive {
   line-height: 34px;
 }
 
-.why-its-highly-important__overlay {
-  background: rgba(17, 62, 106, 0.5);
-  bottom: 0;
-  font-size: 0;
-  left: 0;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  transition: all 0.3s ease 0s;
-  top: 0;
-  z-index: -1;
-}
-
-.why-its-highly-important__overlay.show {
-  opacity: 1;
-  z-index: 110;
-}
-
 .for-patients-weekly-basis {
   margin-bottom: 37px;
   margin-top: 50px;
@@ -3540,25 +3527,15 @@ main.main.get-skinive {
 }
 
 .for-patients-weekly-basis__read-more {
-  background: #F9F9F9;
+  background-color: #F9F9F9;
   border-radius: 100px;
-  left: 0;
+  height: auto;
   padding-bottom: 113px;
   padding-left: 136px;
   padding-right: 136px;
   padding-top: 114px;
-  position: absolute;
-  right: 0;
-  opacity: 0;
-  transition: all 0.3s ease 0s;
-  visibility: hidden;
-  top: 70px;
+  max-width: 1400px;
   z-index: 120;
-}
-
-.for-patients-weekly-basis__read-more.show {
-  opacity: 1;
-  visibility: visible;
 }
 
 .for-patients-weekly-basis__read-more-close {
@@ -3679,7 +3656,6 @@ main.main.get-skinive {
   align-items: center;
   border: 1px solid #F75005;
   border-radius: 40px;
-  box-shadow: 0 20px 30px rgba(255, 120, 60, 0.25);
   color: #F75005;
   display: flex;
   justify-content: center;
@@ -6326,6 +6302,10 @@ a.plyr__control:before {
     width: calc(61% - 30px);
   }
 
+  .for-patients-weekly-basis__read-more-item:nth-child(1) .for-patients-weekly-basis__read-more-illustration {
+    display: none;
+  }
+
   .for-patients-weekly-basis__read-more-item:nth-child(2) {
     align-items: center;
     padding-left: 50px;
@@ -6954,7 +6934,7 @@ a.plyr__control:before {
   }
 
   .world-better-slider__wrap-text {
-    padding-bottom: calc(10px + 28 * ((100vw - 320px) / 880));
+    padding-bottom: calc(10px + 7 * ((100vw - 320px) / 880));
   }
 
   .world-better-slider__wrap-text {
@@ -7303,10 +7283,6 @@ a.plyr__control:before {
 
   .for-patients-weekly-basis__read-more {
     padding-top: calc(22px + 92 * ((100vw - 320px) / 880));
-  }
-
-  .for-patients-weekly-basis__read-more {
-    top: calc(-25px + 95 * ((100vw - 320px) / 880));
   }
 
   .for-patients-weekly-basis__read-more-close {
@@ -8099,6 +8075,10 @@ a.plyr__control:before {
     max-width: 100%;
   }
 
+  .for-patients-weekly-basis__read-more-item:nth-child(2) {
+    display: none;
+  }
+
   .for-patients-weekly-basis__read-more-title {
     font-weight: 800;
     text-align: center;
@@ -8113,6 +8093,9 @@ a.plyr__control:before {
   }
 
   .for-patients-weekly-basis__read-more-illustration {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 53%;
   }
 
@@ -8302,9 +8285,8 @@ a.plyr__control:before {
   }
 
   .first-screen__button {
-    height: 86px;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 14px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
     margin-top: -26px;
@@ -8334,7 +8316,7 @@ a.plyr__control:before {
   }
 
   .take-care-of-skin__item:nth-child(1) {
-    margin-bottom: 111px;
+    margin-bottom: 95px;
   }
 
   .take-care-of-skin__text-above-title {
@@ -8355,7 +8337,7 @@ a.plyr__control:before {
 
   .take-care-of-skin__icons {
     justify-content: center;
-    margin: 0 -10px 22px;
+    margin: 0 -10px 11px;
   }
 
   .take-care-of-skin__wrap-icon {
@@ -8366,9 +8348,9 @@ a.plyr__control:before {
 
   .take-care-of-skin__blockText p {
     color: #000;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 18px;
     text-align: center;
   }
 
@@ -8569,7 +8551,7 @@ a.plyr__control:before {
   }
 
   .who-we-serve .block-info-numbers__bottom {
-    margin-top: 9px;
+    margin-top: 17px;
   }
 
   .who-we-serve .block-info-numbers__bottom p {
@@ -8659,6 +8641,18 @@ a.plyr__control:before {
     font-weight: 800;
     margin: 0 0 28px;
     text-align: center;
+  }
+
+  .about-values__blockText p {
+    text-align: center;
+  }
+
+  .about-values__blockText p:first-child::before {
+    display: none;
+  }
+
+  .about-values__blockText p span.wrap-quote::after {
+    display: none;
   }
 
   .about-milestones__title {
@@ -9151,6 +9145,61 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 640.98px) {
+  .first-screen .fs-slider__block-wrap-arrow {
+    transform: translateY(62%);
+  }
+
+  .first-screen .fs-slider__block {
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    padding: 14px 20px 18px;
+    width: 350px;
+  }
+
+  .first-screen .fs-slider__block-label {
+    width: 206px;
+  }
+
+  .first-screen .fs-slider__block-label p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .first-screen .fs-slider__block-wrap-text {
+    padding-top: 16px;
+  }
+
+  .first-screen .fs-slider__block-wrap-text p {
+    font-size: 14px;
+  }
+
+  .first-screen .fs-slider .fs-slider-button-prev,
+  .first-screen .fs-slider .fs-slider-button-next {
+    height: 38px;
+    width: 38px;
+  }
+
+  .first-screen .fs-slider .fs-slider-button-prev::after,
+  .first-screen .fs-slider .fs-slider-button-next::after {
+    height: 50px;
+    width: 50px;
+  }
+
+  .first-screen .fs-slider .fs-slider-button-next {
+    margin-left: 18px;
+  }
+
+  .start-your-jouney__wrap-video {
+    padding-bottom: 122%;
+  }
+
+  .take-care-of-skin__wrap-icon {
+    height: 29px;
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+
   .about-fs__block-text {
     padding-top: 23px;
   }
@@ -9224,6 +9273,21 @@ a.plyr__control:before {
   .for-patients-skinive-app__bg.dekstop {
     display: none;
   }
+
+  .plyr__control.plyr__control--overlaid {
+    height: 84px;
+    width: 84px;
+  }
+}
+
+@media screen and (max-width: 640.98px) and (max-width: 1200px) {
+  .plyr__control.plyr__control--overlaid {
+    height: calc(54px + 30 * ((100vw - 320px) / 880));
+  }
+
+  .plyr__control.plyr__control--overlaid {
+    width: calc(54px + 30 * ((100vw - 320px) / 880));
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -9259,9 +9323,6 @@ a.plyr__control:before {
   }
 
   .first-screen__button {
-    font-size: 34px;
-    height: 161px;
-    line-height: 36px;
     margin-top: 0;
   }
 
@@ -9345,6 +9406,7 @@ a.plyr__control:before {
   .who-we-serve__text-above-title {
     font-size: 36px;
     line-height: 46px;
+    margin-bottom: 3px;
   }
 
   .who-we-serve__title {
@@ -9448,18 +9510,6 @@ a.plyr__control:before {
     line-height: calc(24px + 20 * ((100vw - 320px) / 880));
   }
 
-  .first-screen__button {
-    font-size: calc(16px + 18 * ((100vw - 320px) / 880));
-  }
-
-  .first-screen__button {
-    height: calc(60px + 101 * ((100vw - 320px) / 880));
-  }
-
-  .first-screen__button {
-    line-height: calc(18px + 18 * ((100vw - 320px) / 880));
-  }
-
   .start-your-jouney__text-above-title {
     font-size: calc(18px + 18 * ((100vw - 320px) / 880));
   }
@@ -9477,11 +9527,11 @@ a.plyr__control:before {
   }
 
   .take-care-of-skin__text-above-title {
-    font-size: calc(18px + 18 * ((100vw - 320px) / 880));
+    font-size: calc(15px + 21 * ((100vw - 320px) / 880));
   }
 
   .take-care-of-skin__text-above-title {
-    line-height: calc(26px + 20 * ((100vw - 320px) / 880));
+    line-height: calc(23px + 23 * ((100vw - 320px) / 880));
   }
 
   .take-care-of-skin__title {
@@ -9557,7 +9607,7 @@ a.plyr__control:before {
   }
 
   .who-we-serve {
-    padding-bottom: calc(25px + -8 * ((100vw - 320px) / 880));
+    padding-bottom: calc(21px + -4 * ((100vw - 320px) / 880));
   }
 
   .who-we-serve__text-above-title {
@@ -9651,7 +9701,7 @@ a.plyr__control:before {
   }
 
   .first-screen .fs-slider__block {
-    bottom: 14%;
+    bottom: 10%;
   }
 
   .about-fs__title {
@@ -9858,7 +9908,7 @@ a.plyr__control:before {
   }
 
   .who-we-serve .block-info-numbers {
-    margin-top: 13px;
+    margin-top: 18px;
   }
 
   .get-skinive__tabs-button {
@@ -9912,11 +9962,6 @@ a.plyr__control:before {
 @media screen and (max-width: 430.98px) {
   .first-screen__item .first-screen__item {
     height: 851px;
-  }
-
-  .take-care-of-skin__wrap-icon {
-    margin-left: 8px;
-    margin-right: 8px;
   }
 
   .about-our-products__wrap-icon {
@@ -9989,6 +10034,12 @@ a.plyr__control:before {
 @media screen and (max-width: 359.98px) {
   .about-milestones__slider-line-bg {
     width: 72%;
+  }
+}
+
+@media screen and (max-width: 350.98px) {
+  .first-screen .fs-slider__block {
+    bottom: 5%;
   }
 }
 
