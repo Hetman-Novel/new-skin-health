@@ -1106,11 +1106,11 @@ body.lock {
 .popup__content {
   background-color: #fff;
   border-radius: 20px;
-  max-width: 670px;
+  max-width: 70%;
   padding-bottom: 55px;
-  padding-left: 86px;
-  padding-right: 95px;
   padding-top: 58px;
+  padding-left: 30px;
+  padding-right: 30px;
   position: relative;
 }
 
@@ -1285,6 +1285,10 @@ a {
   padding: 16px 25px 17px;
   transition: all 0.3s ease 0s;
   text-align: center;
+  /*@include media-max-480 {
+  	font-size: 16px;
+  	height: 60px;
+  }*/
 }
 
 /* Top menu */
@@ -3230,8 +3234,7 @@ main.main.get-skinive {
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.05em;
-  margin-bottom: 20px;
-  margin-right: 110px;
+  padding-right: 110px;
   text-align: left;
 }
 
@@ -6287,6 +6290,10 @@ a.plyr__control:before {
     padding-right: 35px;
   }
 
+  .about-vision__blockTitle {
+    margin-bottom: 20px;
+  }
+
   .for-patients-weekly-basis__read-more-items {
     display: flex;
     margin-left: -15px;
@@ -6718,14 +6725,6 @@ a.plyr__control:before {
   }
 
   .popup__content {
-    padding-left: calc(17px + 69 * ((100vw - 320px) / 880));
-  }
-
-  .popup__content {
-    padding-right: calc(17px + 78 * ((100vw - 320px) / 880));
-  }
-
-  .popup__content {
     padding-top: calc(42px + 16 * ((100vw - 320px) / 880));
   }
 
@@ -7150,7 +7149,7 @@ a.plyr__control:before {
   }
 
   .about-vision__blockTitle {
-    margin-right: calc(80px + 30 * ((100vw - 320px) / 880));
+    padding-right: calc(80px + 30 * ((100vw - 320px) / 880));
   }
 
   .about-vision__blockTitle::after {
@@ -7756,12 +7755,19 @@ a.plyr__control:before {
     width: 28px;
   }
 
-  .header .header__menu {
-    padding-bottom: 50px;
+  .header .menu__sub-list li:not(:last-child) {
+    margin-bottom: 25px;
   }
 
+  .header__wrap-button-icons {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media screen and (max-width: 1199.98px) and (max-width: 767.98px) {
   .header .menu-topmenu-container {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 280px);
     min-height: 60px;
     margin-top: 30px;
     padding-top: 30px;
@@ -7781,17 +7787,12 @@ a.plyr__control:before {
     line-height: 18px;
   }
 
-  .header .menu__sub-list li:not(:last-child) {
-    margin-bottom: 25px;
-  }
-
   .header__wrap-button-icons {
-    padding-left: 30px !important;
-    padding-right: 30px !important;
+    height: 112px;
   }
 
   .header__social-icons {
-    height: 75px !important;
+    height: 52px !important;
     margin-bottom: 0 !important;
   }
 
@@ -7830,6 +7831,10 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 1024.98px) {
+  .popup__content {
+    max-width: 90%;
+  }
+
   .take-care-of-skin__block {
     padding: 25px;
   }
@@ -8701,6 +8706,12 @@ a.plyr__control:before {
     padding: 22px 40px 0;
   }
 
+  .about-vision__blockTitle {
+    display: block;
+    padding-bottom: 21px;
+    width: 100%;
+  }
+
   .about-vision__wrap-icon {
     right: 60px;
     top: -15px;
@@ -9041,6 +9052,11 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 767.98px) {
+  .header__button {
+    font-size: 16px;
+    height: 60px;
+  }
+
   .about-publication-clinical__blocks {
     margin: -2px;
   }
@@ -9105,6 +9121,11 @@ a.plyr__control:before {
 }
 
 @media (max-width: 767px) {
+  .header .menu__list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .plyr__time + .plyr__time {
     display: none;
   }
@@ -9696,6 +9717,10 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 575.98px) {
+  .popup__content {
+    max-width: 100%;
+  }
+
   .first-screen .fs-slider__wrap-image {
     transform: translate(-50%, 10%);
   }
@@ -9763,6 +9788,11 @@ a.plyr__control:before {
     padding-right: 20px;
   }
 
+  .popup__content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .header__wrapper .n_container {
     margin-left: 20px;
     margin-right: 20px;
@@ -9784,6 +9814,7 @@ a.plyr__control:before {
   }
 
   .get-skinive__buttons {
+    bottom: calc(16% + 4px);
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -9873,13 +9904,6 @@ a.plyr__control:before {
   }
 }
 
-@media (max-width: 500px) {
-  .header .menu__list {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-}
-
 @media screen and (max-width: 500.98px) {
   .key-features__block {
     margin-left: 27px;
@@ -9896,11 +9920,6 @@ a.plyr__control:before {
     height: 50px;
     padding-left: 12px;
     padding-right: 20px;
-  }
-
-  .header__button {
-    font-size: 16px;
-    height: 60px;
   }
 
   .first-screen__item .first-screen__item {
@@ -9929,13 +9948,6 @@ a.plyr__control:before {
 
   .for-patients-weekly-basis__wrap-image img {
     max-width: 156px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header .menu__list {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
@@ -10003,6 +10015,10 @@ a.plyr__control:before {
 
   .get-skinive__wrap-content {
     margin-bottom: -60px;
+  }
+
+  .get-skinive__buttons {
+    bottom: calc(20% + 4px);
   }
 
   .get-skinive__social-icon svg {

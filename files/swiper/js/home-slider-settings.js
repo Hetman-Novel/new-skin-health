@@ -80,7 +80,7 @@ if (world_better_slider) {
       // Отступ между слайдами
       spaceBetween: 29,
 
-      //loop: true,
+      loop: true,
 
       // Скорость
       speed: 800,
