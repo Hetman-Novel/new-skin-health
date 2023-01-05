@@ -2253,6 +2253,7 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 }
 
 .world-better-slider__wrap-text p {
+  color: #000000 !important;
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
@@ -2270,6 +2271,7 @@ body._pc .header .menu__list > li:hover .menu__arrow {
 }
 
 .world-better-slider__data {
+  color: #000000 !important;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.05em;
@@ -4278,6 +4280,7 @@ main.main.get-skinive {
 }
 
 .for-doctors-page .key-features .block__item .block__title {
+  color: #000000 !important;
   display: block;
   font-size: 22px;
   font-weight: 500;
