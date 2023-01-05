@@ -26,8 +26,21 @@ if (fs_slider) {
 
       loop: true,
 
+      // Автопрокрутка
+      autoplay: {
+         // Пауза между прокруткой
+         delay: 10000,
+
+         // Закончить на последнем слайде
+         stopOnLastSlide: false,
+
+         // Отключить после ручного переключения
+         disableOnInteraction: false,
+      },
+
       // Скорость
       speed: 800,
+
       effect: 'fade',
       /*fadeEffect: {
          crossFade: true

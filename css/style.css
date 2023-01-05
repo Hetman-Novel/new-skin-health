@@ -1959,7 +1959,6 @@ body._pc .header .menu__list > li:hover .menu__arrow {
   margin-top: 92px;
   padding-bottom: 118px;
   padding-left: 30px;
-  padding-right: 30px;
   padding-top: 106px;
   position: relative;
 }
@@ -9059,8 +9058,9 @@ a.plyr__control:before {
   }
 
   .start-your-jouney__title {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 800;
     max-width: 480px;
     margin: 0 auto 40px;
     text-align: center;
@@ -10258,11 +10258,13 @@ a.plyr__control:before {
   .start-your-jouney__text-above-title {
     font-size: 36px;
     line-height: 46px;
+    margin-bottom: 3px;
   }
 
   .start-your-jouney__title {
     font-size: 46px;
     line-height: 51px;
+    margin-bottom: 24px;
   }
 
   .take-care-of-skin__text-above-title {
@@ -10457,19 +10459,19 @@ a.plyr__control:before {
   }
 
   .start-your-jouney__text-above-title {
-    font-size: calc(18px + 18 * ((100vw - 320px) / 880));
+    font-size: calc(15px + 21 * ((100vw - 320px) / 880));
   }
 
   .start-your-jouney__text-above-title {
-    line-height: calc(26px + 20 * ((100vw - 320px) / 880));
+    line-height: calc(23px + 23 * ((100vw - 320px) / 880));
   }
 
   .start-your-jouney__title {
-    font-size: calc(26px + 20 * ((100vw - 320px) / 880));
+    font-size: calc(24px + 22 * ((100vw - 320px) / 880));
   }
 
   .start-your-jouney__title {
-    line-height: calc(38px + 13 * ((100vw - 320px) / 880));
+    line-height: calc(32px + 19 * ((100vw - 320px) / 880));
   }
 
   .take-care-of-skin__text-above-title {
