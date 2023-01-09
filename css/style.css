@@ -1106,7 +1106,7 @@ body.lock {
 .popup__content {
   background-color: #fff;
   border-radius: 20px;
-  max-width: 70%;
+  max-width: 90%;
   padding-bottom: 55px;
   padding-top: 58px;
   padding-left: 30px;
@@ -3374,21 +3374,20 @@ main.main.get-skinive {
   position: relative;
   transition: all 0.3s ease 0s;
   width: 46px;
-}
+  /*&:hover {
+     background-color: #F75005;
+     box-shadow: 0px 20px 30px rgba(255, 120, 60, 0.25);
+     color: #fff;
 
-.about-our-products__block-link:hover {
-  background-color: #F75005;
-  box-shadow: 0px 20px 30px rgba(255, 120, 60, 0.25);
-  color: #fff;
-}
+     &::after {
+        animation: pulse-icon 1.2s infinite ease-in-out;
+        background-color: rgba(247, 80, 5, 1);
+     }
 
-.about-our-products__block-link:hover::after {
-  animation: pulse-icon 1.2s infinite ease-in-out;
-  background-color: rgb(247, 80, 5);
-}
-
-.about-our-products__block-link:hover .take-care-of-skin__link-wrap-icon {
-  z-index: 1;
+     .take-care-of-skin__link-wrap-icon {
+        z-index: 1;
+     }
+  }*/
 }
 
 .about-our-products__block-link::after {
@@ -3561,6 +3560,7 @@ main.main.get-skinive {
 }
 
 .for-patients-weekly-basis__read-more-title {
+  color: #000;
   font-size: 64px;
   line-height: 72px;
   letter-spacing: 0.01em;
@@ -3568,6 +3568,7 @@ main.main.get-skinive {
 }
 
 .for-patients-weekly-basis__read-more-block-text p {
+  color: #000;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.01em;
@@ -8522,10 +8523,6 @@ a.plyr__control:before {
 }
 
 @media screen and (max-width: 1024.98px) {
-  .popup__content {
-    max-width: 90%;
-  }
-
   .take-care-of-skin__block {
     padding: 25px;
   }
@@ -11301,6 +11298,21 @@ a.plyr__control:before {
 
   .get-skinive__social-icon:hover svg {
     transform: scale(0.9);
+  }
+
+  .about-our-products__block:hover .about-our-products__block-link {
+    background-color: #F75005;
+    box-shadow: 0px 20px 30px rgba(255, 120, 60, 0.25);
+    color: #fff;
+  }
+
+  .about-our-products__block:hover .about-our-products__block-link::after {
+    animation: pulse-icon 1.2s infinite ease-in-out;
+    background-color: rgb(247, 80, 5);
+  }
+
+  .about-our-products__block:hover .about-our-products__block-link .take-care-of-skin__link-wrap-icon {
+    z-index: 1;
   }
 
   .footer__social-list-item:hover svg {
